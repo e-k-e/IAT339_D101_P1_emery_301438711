@@ -1,0 +1,373 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+/* ELEMENT STYLING -----------------------------*/
+
+html{
+  font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  font-size: 100%;
+  font-size: 1.25rem;
+  padding: 0rem 2rem;
+  /* resize: none; */
+}
+
+h1{
+  font-size: 250%;
+  font-weight: 200;
+}
+
+h2{
+  color: lightslategray;
+  font-size: 150%;
+  font-weight: 500;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  padding-top: 1em;
+  border-top-width: 0.16rem;
+  border-top-style: solid;
+  border-top-color: lightgray;
+}
+
+h3 {
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font-weight: 350;
+  margin-bottom: 0.25rem;
+}
+
+h5{
+  font-weight: 550;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 30em;
+  line-height: 170%;
+  letter-spacing: 0.02em;
+}
+
+label{
+  font-weight: 600;
+}
+
+ol{
+  margin-left: 1em;
+  padding-left: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+li{
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+input{
+  padding: 0.25em;
+  margin: 0.25em 0em;
+  border: 0.15em paleturquoise solid;
+  border-radius: 0.25em;
+}
+
+input:focus, input:enabled, input:checked{
+  border: 0.15em paleturquoise solid;
+}
+
+nav{
+  margin-top: 0em;
+  margin-bottom: 1.5em;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+  /* text-decoration: overline; */
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+img{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  padding: 0.5em;
+  border: 0.15em solid rgba(255, 255, 255, 0);
+  /* 
+  https://stackoverflow.com/questions/2506844/how-do-i-make-a-transparent-border-with-css-so-that-contents-dont-shift-positio 
+  */
+}
+
+/* 
+  ELEMENT CLASSES --------------------------------
+*/
+
+.element {
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
+  margin-top: 1em;
+}
+
+.special-header{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-top-width: 0;
+  padding-top: 0;
+}
+
+.product_box{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.product_img_box{
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  /* 
+  https://blog.hubspot.com/website/center-an-image-in-html#:~:text=In%20your%20CSS%20code%2C%20find,the%20div)%20vertically%20and%20horizontally. 
+  */
+  width: 20rem;
+  height: 20rem;
+  background-color: lightslategray;
+  border: 0.05rem solid black;
+}
+
+.product_img{
+  padding: 0.1em;
+  object-fit: contain;
+  margin: auto;
+}
+
+/* INTERACTIVE CLASSES: */
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5rem 1em;
+  font-size: 100%;
+  font-weight: 500;
+  color: paleturquoise;
+  background-color: lightslategray;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: paleturquoise;
+  color: lightslategray;
+}
+
+
+/*  
+learned what follows at:
+https://www.w3schools.com/howto/howto_css_searchbar.asp
+*/
+.nav_bar{
+  margin: 0;
+  padding: 0.0em;
+  overflow: hidden;
+  background-color: lightslategray;
+}
+
+.nav_bar a {
+  float: left;
+  display: block;
+  color: paleturquoise;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  font-size: 120%;
+  font-weight: 500;
+}
+
+.nav_bar a:hover{
+  background-color: paleturquoise;
+  color: lightslategray;
+}
+
+.nav_bar input{
+  float: right;
+  display: block;
+  color: lightslategray;
+  padding: 0.1em 0.1em;
+  margin-top: 0.0em;
+  margin-bottom: 0.0em;
+  text-decoration: none;
+  font-size: 120%;
+  font-weight: 500; 
+}
+
+.button_submit, .button_submit:enabled{
+  display: inline-block;
+  background-color: paleturquoise;
+  color: black;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  margin: 0.5em 0em;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  /* https://www.w3schools.com/css/css3_borders.asp */
+  border: solid white;
+}
+
+.button_submit:hover, .button_submit:focus{
+  border-radius: 0.5rem;
+  border: solid steelblue;
+  filter: brightness(0.9);
+  /* https://blog.jim-nielsen.com/2019/dynamically-darken-a-color-in-css/ */
+}
+
+.button_reset, .button_reset:enabled{
+  display: inline-block;
+  background-color: lightslategray;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  margin: 0.5em 0em;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  border: solid white;
+}
+
+.button_reset:hover, .button_submit:focus{
+  border: solid black;
+  filter: brightness(0.9);
+}
+
+.button_action, .button_action:enabled{
+  display: inline-block;
+  padding: 0.5rem 0.7em;
+  margin: 0.25em 0em;
+  font-size: 100%;
+  font-weight: 500;
+  color: black;
+  background-color: lightcoral;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  border: solid white;
+}
+
+.button_action:hover, .button_action:focus{
+  color: white;
+  border-radius: 0.5rem;
+  border: solid black;
+  filter: brightness(0.9);
+}
+
+.text-link{
+  color: #0066CC;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.text-link:hover, .text-link:focus{
+  text-decoration: underline;
+}
+
+.img-link:hover, .img-link:focus{
+  border: 0.15em solid paleturquoise;
+  border-radius: 0.5rem;
+  filter: opacity(0.6);
+}
+
+.img_header{
+  max-width: 30em;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* 
+CUSTOMIZING RADIO BUTTONS
+found here: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+*/
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 1.75em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  font-size: 100%;
+  font-weight: 400;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  background-color: white;
+  border: 0.15em solid paleturquoise;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: paleturquoise;
+  border: 0.15em solid steelblue;
+  filter: brightness(0.9);
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: paleturquoise;
+  border: 0.15em solid steelblue;
+}
+
+
+/*
+  IDs -------------------------------------------------------
+*/
+
+/* 
+following code from: https://www.thesitewizard.com/css/create-coloured-box.shtml 
+COLOR BOXES!!
+*/
+#color1_box{
+  background-color: lightcoral;
+  padding: 2em;
+  margin: 1em 0em;
+}
+
+#color2_box{
+  background-color: paleturquoise;
+  padding: 2em;
+  margin: 1em 0em;
+}
+
+#color3_box{
+  background-color: lightslategray;
+  padding: 2em;
+  margin: 1em 0em;
+}
