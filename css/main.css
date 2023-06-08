@@ -216,6 +216,24 @@ https://www.w3schools.com/howto/howto_css_searchbar.asp
   font-weight: 500; 
 }
 
+/*
+following dropdown code found at:
+https://blog.hubspot.com/website/html-dropdown
+*/
+.nav_dropdown{
+  display: inline-block;
+  position: relative;
+}
+
+.nav_dropdown_content{
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0rem, 5rem, 5rem, 0rem, rgba(0, 0, 0, 0.4);
+}
+
+
 .button_submit, .button_submit:enabled{
   display: inline-block;
   background-color: paleturquoise;
