@@ -36,7 +36,7 @@ h1{
 
 h2{
   color: lightslategray;
-  font-size: 150%;
+  font-size: 200%;
   font-weight: 500;
   margin-top: 0.5em;
   margin-bottom: 1em;
@@ -47,6 +47,7 @@ h2{
 }
 
 h3 {
+  font-size: 150%;
   font-weight: 600;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -70,7 +71,7 @@ p {
 }
 
 label{
-  font-weight: 600;
+  font-weight: 400;
 }
 
 ol{
@@ -87,7 +88,10 @@ li{
 
 input{
   padding: 0.25em;
-  margin: 0.25em 0em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  margin-left: 0;
+  margin-right: 0.25em;
   border: 0.15em paleturquoise solid;
   border-radius: 0.25em;
 }
@@ -171,6 +175,12 @@ img{
   object-fit: contain;
   margin: auto;
   
+}
+
+.product_txt{
+  font-size: 100%;
+  font-weight: 100;
+  line-height: 1.7rem;
 }
 
 /* INTERACTIVE CLASSES: */
@@ -300,13 +310,11 @@ https://blog.hubspot.com/website/html-dropdown
   background-color: lightcoral;
   text-decoration: none;
   border-radius: 0.5rem;
-  border: solid white;
 }
 
 .button_action:hover, .button_action:focus{
   color: white;
   border-radius: 0.5rem;
-  border: solid black;
   filter: brightness(0.9);
 }
 
@@ -382,6 +390,42 @@ found here: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
   border: 0.15em solid steelblue;
 }
 
+/*
+learned dropdown stuff here:
+https://blog.hubspot.com/website/html-dropdown
+*/
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown_content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+.dropdown_content a {
+  display: block;
+  color: black;
+  background-color: white;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+.dropdown_content a:hover {
+  color: white;
+  background-color: lightslategray;
+}
 
 /*
   IDs -------------------------------------------------------
@@ -480,15 +524,6 @@ COLOR BOXES!!
   margin-right: 2em;
 }
 
-#color_box_combo_coral_on_grey{
-  background-color: lightslategray;
-  color: paleturquoise;
-  padding: 2em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0em;
-  margin-right: 2em;
-}
 
 
 #style_img{
@@ -498,6 +533,21 @@ COLOR BOXES!!
 }
 
 #font_example{
-  font-size: 200%;
+  font-size: 150%;
   font-weight: 500;
+  color: lightslategray;
+}
+
+#checkout_box{
+  border: 0.05rem solid lightslategray;
+}
+
+#checkout_payment{
+  padding: 2em;
+}
+
+#checkout_item{
+  background-color: lightslategray;
+  color: white;
+  padding: 3em 3.5em;
 }

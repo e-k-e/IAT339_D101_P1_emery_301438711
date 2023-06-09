@@ -15,15 +15,40 @@
   <body>
 
     <header>
-      <nav class="nav_bar">        
-        <a href="#brand_elements">Brand Elements</a>
-        <a href="#text_elements">Text Elements</a>
-        <a href="#interactive_elements">Interactive Elements</a>
-        <a href="#combined_elements">Combined Elements</a>
-        <a href="product_listing.html">Product Listing Template</a>
-        <a href="checkout.html">Checkout Template</a>
-        <a href="#citations">Citations</a>
+      <!--
+      <nav class="nav_bar">  
+        <div class="dropdown">
+          <a href="#brand_elements">Brand Elements</a>
+          <div class="dropdown_content">
+            <a href="#Typeface">Typeface</a>
+          </div>  
+        </div>      
+        <div class="dropdown">
+          <a href="#text_elements">Text Elements</a>
+          <div class="dropdown_content">
+            <a href="#Typeface">Typeface</a>
+          </div>  
+        </div>      
+        <div class="dropdown">
+          <a href="#interactive_elements">Interactive Elements</a>
+          <div class="dropdown_content">
+            <a href="#Typeface">Typeface</a>
+          </div>  
+        </div>  
+        <div class="dropdown">
+          <a href="#citations">Citations</a>
+        </div>    
       </nav>
+      -->
+
+      <nav class="nav_bar box">
+        <a class="box-item-nav" href="#brand_elements">Brand Elements</a>
+        <a class="box-item-nav" href="#text_elements">Text Elements</a>
+        <a class="box-item-nav" href="#interactive_elements">Interactive Elements</a>
+        <a class="box-item-nav" href="#combined_elements">Combined Elements</a>
+        <a class="box-item-nav" href="#citations">Citations</a>
+      </nav>
+
  
       <h1>DENIS SIMONS GALLERY STYLE GUIDE</h1>
       <div>
@@ -41,7 +66,7 @@
       <h2>BRAND ELEMENTS</h2>
 
       <section class="element">
-        <h3>Typeface:</h3>
+        <h3 id="Typeface">Typeface:</h3>
         <p id="font_example" class="special-header">Quicksand [Titles and headings]</p>
         <p id="font_example" font face="Montserrat">Montserrat [Body copy]</p>
       </section>
@@ -84,9 +109,6 @@
           </div>
           <div id="color_box_combo_turquoise_on_grey">
             Turquoise on Grey
-          </div>
-          <div id="color_box_combo_coral_on_grey">
-            Coral on Grey
           </div>
        </div>
       </section>
@@ -231,17 +253,17 @@
 
       <section>
         <h3>Main Navigation:</h3>
-        <div class="nav_bar">
-          <a href="#">Home</a>
-          <a href="#">News</a>
-          <a href="#">Contact</a>
-          <a href="#">About</a>
-          <input type="text" placeholder="Search..">
+        <div class="nav_bar box">
+          <a class="box-item-nav" href="#">Home</a>
+          <a class="box-item-nav" href="#">News</a>
+          <a class="box-item-nav" href="#">Contact</a>
+          <a class="box-item-nav" href="#">About</a>
+          <input class="box-item-nav" type="text" placeholder="Search..">
         </div>
       </section>
 
       <section class="element">
-        <div><h3>Product/Service Listing</h3></div>
+        <div><h3>Product/Service Listing:</h3></div>
         <div>
         </div>
           <div class="product_box box">
@@ -249,7 +271,7 @@
               <div class="product_img_box">
                 <img class="product_img" src="img/cereal01.png" alt="Abstract geometric shapes">
               </div>
-              <p font face="Montserrat">
+              <p font face="Montserrat" class="product_txt">
                 Artist's Name<br>
                 <em>Title of Work</em><br>
                 Year<br>
@@ -264,7 +286,7 @@
             <div class="product_img_box">
               <img class="product_img" src="img/cereal02.png" alt="Abstract geometric shapes">
             </div>
-            <p font face="Montserrat">
+            <p font face="Montserrat" class="product_txt">
               Artist's Name<br>
               <em>Title of Work</em><br>
               Year<br>
@@ -279,7 +301,7 @@
             <div class="product_img_box">
               <img class="product_img" src="img/cereal04.png" alt="Abstract geometric shapes">
             </div>
-            <p font face="Montserrat">
+            <p font face="Montserrat" class="product_txt">
               Artist's Name<br>
               <em>Title of Work</em><br>
               Year<br>
@@ -294,7 +316,7 @@
             <div class="product_img_box">
               <img class="product_img" src="img/cereal05.png" alt="Abstract geometric shapes">
             </div>
-            <p font face="Montserrat">
+            <p font face="Montserrat" class="product_txt">
               Artist's Name<br>
               <em>Title of Work</em><br>
               Year<br>
@@ -309,7 +331,7 @@
             <div class="product_img_box">
               <img class="product_img" src="img/cereal06.png" alt="Abstract geometric shapes">
             </div>
-            <p font face="Montserrat">
+            <p font face="Montserrat" class="product_txt">
               Artist's Name<br>
               <em>Title of Work</em><br>
               Year<br>
@@ -324,7 +346,7 @@
             <div class="product_img_box">
               <img class="product_img" src="img/cereal07.png" alt="Abstract geometric shapes">
             </div>
-            <p font face="Montserrat">
+            <p font face="Montserrat" class="product_txt">
               Artist's Name<br>
               <em>Title of Work</em><br>
               Year<br>
@@ -340,20 +362,42 @@
 
       </section>
 
-      <section class="element">
-        <h3>Payment Form</h3>
 
-        <div>
-          <div class="product_img_box">
-            <img class="product_img" src="img/cereal01.png" alt="Abstract geometric shapes">
-            <p>THIS IS SOME TEST TEXT</p>
-            <p>THIS IS MORE TEST TEXTY TEXT</p>
+      <!--
+        took a lot of code from:
+        https://devsnap.me/css-checkout-forms
+      -->
+      <section class="element">
+        <h3>Checkout Cart:</h3>
+        <div class="box" id="checkout_box">
+          <div id="checkout_item">
+            <div class="product_img_box">
+              <img class="product_img" src="img/cereal05.png" alt="Abstract geometric shapes">
+            </div>
+            <p font face="Montserrat" class="product_txt">
+              Artist's Name<br>
+              <em>Title of Work</em><br>
+              Year<br>
+              Media<br>
+              Width x Height in<br>
+              $Price
+            </p>
+            <a class="button_action" href="#">ADD ITEM</a>  
+          </div>
+          <div id="checkout_payment">
+            <h3>Payment Details</h3>
+            <label for="Card Number">Card Number</label><br>
+            <input type="text" name="card-num" maxlength="19" placeholder="Card Number"><br><br>
+            <label for="Card Holder">Card Holder</label><br>
+            <input type="text" name="card-hold" maxlength="50" placeholder="Your Name"><br><br> 
+            <label for="Expiry">Exp Date</label><br>
+            <input type="text" id="inputExpDate" name="expiry" placeholder="MM / YY" 
+            maxlength="4" required/><br><br>
+            <label for="CVV">CVV</label><br>
+            <input type="password" class="cvv" placeholder="CVV" maxlength="3"><br><br> 
+            <a class="button_action" href="#">PURCHASE</a>   
           </div>
         </div>
-      </section>
-
-      <section class="element">
-        <h3>Checkout Cart</h3>
       </section>
 
     </section>
@@ -367,6 +411,9 @@
       <ul>
         <li>
           Andrew Paglinawan. Designer. <strong>Quicksand [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Quicksand">https://fonts.google.com/specimen/Quicksand</a>
+        </li>
+        <li>
+          Julieta Ulanovsky, Sol Matas, Juan Pablo del Peral, Jacques Le Bailly. Designers. <strong>Montserrat [Font]</strong>.  Retrieved from <a href="https://fonts.google.com/specimen/Montserrat">https://fonts.google.com/specimen/Montserrat</a>
         </li>
       </ul>
 
