@@ -8,6 +8,20 @@
 html{
   font-family: "Quicksand", Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/*
+learned font-face stuff here:
+https://www.w3schools.com/cssref/css3_pr_font-face_rule.php
+*/
+@font-face {
+  font-family: Quicksand;
+  src: url(/font/Quicksand-Light.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(/font/Montserrat-VariableFont_wght.ttf);
+}
+
 body {
   font-size: 100%;
   font-size: 1.25rem;
@@ -131,8 +145,11 @@ img{
 }
 
 .product_box{
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  margin-right: 5em;
+  line-height: 1em;
+  
 }
 
 .product_img_box{
@@ -144,14 +161,16 @@ img{
   */
   width: 20rem;
   height: 20rem;
-  background-color: lightslategray;
+  background-color: white;
   border: 0.05rem solid black;
+
 }
 
 .product_img{
-  padding: 0.1em;
+  padding: 0.0em;
   object-fit: contain;
   margin: auto;
+  
 }
 
 /* INTERACTIVE CLASSES: */
@@ -209,8 +228,8 @@ https://www.w3schools.com/howto/howto_css_searchbar.asp
   display: block;
   color: lightslategray;
   padding: 0.1em 0.1em;
-  margin-top: 0.0em;
-  margin-bottom: 0.0em;
+  /* margin-top: 0.0em;
+  margin-bottom: 0.0em; */
   text-decoration: none;
   font-size: 120%;
   font-weight: 500; 
@@ -311,7 +330,7 @@ https://blog.hubspot.com/website/html-dropdown
   max-width: 30em;
   margin: 0;
   padding: 0;
-  border: none;
+  border: 0.05rem solid black;
 }
 
 /* 
@@ -375,17 +394,110 @@ COLOR BOXES!!
 #color1_box{
   background-color: lightcoral;
   padding: 2em;
-  margin: 1em 0em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+  margin-right: 2em;
 }
 
 #color2_box{
   background-color: paleturquoise;
   padding: 2em;
-  margin: 1em 0em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+  margin-right: 2em;
 }
 
 #color3_box{
   background-color: lightslategray;
   padding: 2em;
-  margin: 1em 0em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+  margin-right: 2em;
+}
+
+#color_box_combo_black_on_coral{
+  background-color: lightcoral;
+  color: black;
+  padding: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+  margin-right: 2em;
+}
+
+#color_box_combo_white_on_coral{
+  background-color: lightcoral;
+  color: white;
+  padding: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+  margin-right: 2em;
+}
+
+
+#color_box_combo_black_on_turquoise{
+  background-color: paleturquoise;
+  color: black;
+  padding: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+  margin-right: 2em;
+}
+
+
+#color_box_combo_black_on_grey{
+  background-color: lightslategray;
+  color: black;
+  padding: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+  margin-right: 2em;
+}
+
+#color_box_combo_white_on_grey{
+  background-color: lightslategray;
+  color: white;
+  padding: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+  margin-right: 2em;
+}
+
+#color_box_combo_turquoise_on_grey{
+  background-color: lightslategray;
+  color: paleturquoise;
+  padding: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+  margin-right: 2em;
+}
+
+#color_box_combo_coral_on_grey{
+  background-color: lightslategray;
+  color: paleturquoise;
+  padding: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0em;
+  margin-right: 2em;
+}
+
+
+#style_img{
+  max-width: 20em;
+  padding: 0em;
+  border: 0.05rem solid black;
+}
+
+#font_example{
+  font-size: 200%;
+  font-weight: 500;
 }
