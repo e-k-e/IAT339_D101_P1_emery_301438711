@@ -15,31 +15,7 @@
   <body>
 
     <header>
-      <!--
-      <nav class="nav_bar">  
-        <div class="dropdown">
-          <a href="#brand_elements">Brand Elements</a>
-          <div class="dropdown_content">
-            <a href="#Typeface">Typeface</a>
-          </div>  
-        </div>      
-        <div class="dropdown">
-          <a href="#text_elements">Text Elements</a>
-          <div class="dropdown_content">
-            <a href="#Typeface">Typeface</a>
-          </div>  
-        </div>      
-        <div class="dropdown">
-          <a href="#interactive_elements">Interactive Elements</a>
-          <div class="dropdown_content">
-            <a href="#Typeface">Typeface</a>
-          </div>  
-        </div>  
-        <div class="dropdown">
-          <a href="#citations">Citations</a>
-        </div>    
-      </nav>
-      -->
+
 
       <nav class="nav_bar box">
         <a class="box-item-nav" href="#brand_elements">Brand Elements</a>
@@ -67,8 +43,8 @@
 
       <section class="element">
         <h3 id="Typeface">Typeface:</h3>
-        <p id="font_example" class="special-header">Quicksand [Titles and headings]</p>
-        <p id="font_example" font face="Montserrat">Montserrat [Body copy]</p>
+        <div id="font_example_q">Quicksand [Titles and headings]</div>
+        <div id="font_example_m">Montserrat [Body copy]</div>
       </section>
 
       <section class="element">
@@ -129,7 +105,7 @@
 
       <section class="element">
         <h3>Headings:</h3>
-        <h1 class="special-header">THIS IS HEADING #1</h1>
+        <div id="h1_example" class="special-header">THIS IS HEADING #1</div>
         <h2 class="special-header">THIS IS HEADING #2</h2>
         <h3>This is Heading #3</h3>
         <h4>THIS IS HEADING #4</h4>
@@ -137,11 +113,11 @@
 
       <section class="element">
         <h3>Paragraphs:</h3>
-        <p font face="Montserrat">
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <br>
-        <p font face="Montserrat">
+        <p>
           Non enim praesent elementum facilisis leo vel. Ultrices gravida dictum fusce ut placerat orci. Cursus eget nunc scelerisque viverra mauris in aliquam. Platea dictumst vestibulum rhoncus est pellentesque elit. At tempor commodo ullamcorper a lacus. Morbi tristique senectus et netus et malesuada. Massa ultricies mi quis hendrerit dolor magna. Nulla at volutpat diam ut venenatis tellus. Mauris ultrices eros in cursus turpis massa tincidunt dui ut. Leo in vitae turpis massa sed elementum tempus egestas.
         </p>
         <!-- used https://www.w3schools.com/html/html_paragraphs.asp -->
@@ -271,7 +247,7 @@
               <div class="product_img_box">
                 <img class="product_img" src="img/cereal01.png" alt="Abstract geometric shapes">
               </div>
-              <p font face="Montserrat" class="product_txt">
+              <p class="product_txt">
                 Artist's Name<br>
                 <em>Title of Work</em><br>
                 Year<br>
@@ -286,7 +262,7 @@
             <div class="product_img_box">
               <img class="product_img" src="img/cereal02.png" alt="Abstract geometric shapes">
             </div>
-            <p font face="Montserrat" class="product_txt">
+            <p  class="product_txt">
               Artist's Name<br>
               <em>Title of Work</em><br>
               Year<br>
@@ -301,7 +277,7 @@
             <div class="product_img_box">
               <img class="product_img" src="img/cereal04.png" alt="Abstract geometric shapes">
             </div>
-            <p font face="Montserrat" class="product_txt">
+            <p class="product_txt">
               Artist's Name<br>
               <em>Title of Work</em><br>
               Year<br>
@@ -316,7 +292,7 @@
             <div class="product_img_box">
               <img class="product_img" src="img/cereal05.png" alt="Abstract geometric shapes">
             </div>
-            <p font face="Montserrat" class="product_txt">
+            <p  class="product_txt">
               Artist's Name<br>
               <em>Title of Work</em><br>
               Year<br>
@@ -331,7 +307,7 @@
             <div class="product_img_box">
               <img class="product_img" src="img/cereal06.png" alt="Abstract geometric shapes">
             </div>
-            <p font face="Montserrat" class="product_txt">
+            <p class="product_txt">
               Artist's Name<br>
               <em>Title of Work</em><br>
               Year<br>
@@ -346,7 +322,7 @@
             <div class="product_img_box">
               <img class="product_img" src="img/cereal07.png" alt="Abstract geometric shapes">
             </div>
-            <p font face="Montserrat" class="product_txt">
+            <p class="product_txt">
               Artist's Name<br>
               <em>Title of Work</em><br>
               Year<br>
@@ -374,7 +350,7 @@
             <div class="product_img_box">
               <img class="product_img" src="img/cereal05.png" alt="Abstract geometric shapes">
             </div>
-            <p font face="Montserrat" class="product_txt">
+            <p class="product_txt">
               Artist's Name<br>
               <em>Title of Work</em><br>
               Year<br>
@@ -386,15 +362,14 @@
           </div>
           <div id="checkout_payment">
             <h3>Payment Details</h3>
-            <label for="Card Number">Card Number</label><br>
-            <input type="text" name="card-num" maxlength="19" placeholder="Card Number"><br><br>
-            <label for="Card Holder">Card Holder</label><br>
-            <input type="text" name="card-hold" maxlength="50" placeholder="Your Name"><br><br> 
-            <label for="Expiry">Exp Date</label><br>
-            <input type="text" id="inputExpDate" name="expiry" placeholder="MM / YY" 
-            maxlength="4" required/><br><br>
-            <label for="CVV">CVV</label><br>
-            <input type="password" class="cvv" placeholder="CVV" maxlength="3"><br><br> 
+            <label for="card-num">Card Number</label><br>
+            <input id="card-num" type="text" name="card-num" maxlength="16" placeholder="----------------"><br><br>
+            <label for="card-hold">Card Holder</label><br>
+            <input id="card-hold" type="text" name="card-hold" maxlength="50" placeholder="Your Name"><br><br> 
+            <label for="expiry">Exp Date</label><br>
+            <input id="expiry" type="text" name="expiry" placeholder="MM / YY" maxlength="4" required><br><br>
+            <label for="cvv">CVV</label><br>
+            <input id="cvv" type="password" class="cvv" placeholder="---" maxlength="3"><br><br> 
             <a class="button_action" href="#">PURCHASE</a>   
           </div>
         </div>
